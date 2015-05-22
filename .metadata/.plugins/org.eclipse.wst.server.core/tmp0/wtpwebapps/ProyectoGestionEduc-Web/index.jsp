@@ -62,8 +62,8 @@
 		<div id="submenu4" class="">
 			<p class="seleccione">Seleccione tarea:</p>
    			<ul> 			 
-    			<li><a href="PagarMatricula.jsp"><i class="fa fa-hand-o-right"></i> Registrar pago matrícula del estudiante.</p></a></li>
-    			<li><a href="PagarMensualidad.jsp"><i class="fa fa-hand-o-right"></i> Registrar pago mensualidad del estudiante.</p></a></li>
+    			<li><a href="PagoMatricula.jsp"><i class="fa fa-hand-o-right"></i> Registrar pago matrícula del estudiante.</p></a></li>
+    			<li><a href="PagoMensualidad.jsp"><i class="fa fa-hand-o-right"></i> Registrar pago mensualidad del estudiante.</p></a></li>
     		</ul>  
   		</div>
   		    <!-- BOTON -->

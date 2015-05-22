@@ -9,4 +9,44 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+    <servlet>
+    <description></description>
+    <display-name>BuscarEstudiante</display-name>
+    <servlet-name>BuscarEstudiante</servlet-name>
+    <servlet-class>Controlador.BuscarEstudiante</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuscarEstudiante</servlet-name>
+    <url-pattern>/BuscarEstudiante</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegistrarEstudiante</display-name>
+    <servlet-name>RegistrarEstudiante</servlet-name>
+    <servlet-class>Controlador.RegistrarEstudiante</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrarEstudiante</servlet-name>
+    <url-pattern>/RegistrarEstudiante</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegistrarPagoMatricula</display-name>
+    <servlet-name>RegistrarPagoMatricula</servlet-name>
+    <servlet-class>Controlador.RegistrarPagoMatricula</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegistrarPagoMatricula</servlet-name>
+    <url-pattern>/RegistrarPagoMatricula</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ObtenerMorososMatricula</display-name>
+    <servlet-name>ObtenerMorososMatricula</servlet-name>
+    <servlet-class>Controlador.ObtenerMorososMatricula</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ObtenerMorososMatricula</servlet-name>
+    <url-pattern>/ObtenerMorososMatricula</url-pattern>
+  </servlet-mapping>
 </web-app>

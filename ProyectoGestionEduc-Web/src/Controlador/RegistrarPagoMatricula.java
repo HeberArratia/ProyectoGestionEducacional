@@ -57,7 +57,7 @@ public class RegistrarPagoMatricula extends HttpServlet {
 		// Incluir parámetro mensaje en el fichero jsp 
 		request.setAttribute("mensajeregistro",  mensaje );  
 		// Regresar la respuesta al mismo formulario
-		request.getRequestDispatcher("/PagarMatricula.jsp").forward(request, response);
+		request.getRequestDispatcher("/PagoMatricula.jsp").forward(request, response);
 	}
 
 }
