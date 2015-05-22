@@ -12,6 +12,11 @@ import Diagramarefinado.Persona.*;
  */
 public class Secretaria extends Persona {
 
+	public Secretaria(String nombre, String apellido, String rut) {
+		super(nombre, apellido, rut);
+		// TODO Auto-generated constructor stub
+	}
+
 	/**
 	 * Metodo que registra una nueva Secretaria en la base de datos
 	 * 

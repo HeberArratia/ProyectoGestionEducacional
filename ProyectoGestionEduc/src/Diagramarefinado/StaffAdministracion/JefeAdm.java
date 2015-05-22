@@ -3,6 +3,12 @@ package Diagramarefinado.StaffAdministracion;
 import Diagramarefinado.Persona.*;
 
 public class JefeAdm extends Persona {
+	
+
+	public JefeAdm(String nombre, String apellido, String rut) {
+		super(nombre, apellido, rut);
+		// TODO Auto-generated constructor stub
+	}
 
 	public void ingresarPagoSueldo() {
 		// TODO - implement JefeAdm.ingresarPagoSueldo

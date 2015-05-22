@@ -11,7 +11,10 @@ import Diagramarefinado.Persona.*;
  *
  */
 public class Estudiante extends Persona {
-
+	public Estudiante(String nombre, String apellido, String rut) {
+		super(nombre, apellido, rut);
+		// TODO Auto-generated constructor stub
+	}
 	/**
 	 * Metodo que registra un nuevo estudiante en la base datos y le asocia una
 	 * matricla

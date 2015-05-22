@@ -1,0 +1,19 @@
+package JUnit;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class EstudianteTest {
+
+	@Test
+	public void testAgregarNuevoEstudiante() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	public void testBuscarEstudiate() {
+		fail("Not yet implemented");
+	}
+
+}
