@@ -84,6 +84,42 @@ public class Bienvenido extends JFrame {
 		
 		
 		panel.add(btnsecretaria);
+		
+		JPanel paneljefeadm = new JPanel();
+		paneljefeadm.setBounds(60, 57, 312, 91);
+		panel.add(paneljefeadm);
+		paneljefeadm.setLayout(null);
+		paneljefeadm.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Jefe Administraci\u00F3n - Seleccione tarea:", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 255)));
+		paneljefeadm.setBackground(new Color(0, 139, 139));
+		
+		JButton btncrearcurso = new JButton("Crear curso y asignar profesor");
+		btncrearcurso.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+//				CrearCurso cc = new CrearCurso();
+//				cc.setVisible(true);
+//				setVisible(false);
+			}
+		});
+		btncrearcurso.setBounds(25, 41, 265, 21);
+		paneljefeadm.add(btncrearcurso);
+		btncrearcurso.setBackground(new Color(224, 255, 255));
+		btncrearcurso.setFont(new Font("Calibri", Font.PLAIN, 11));
+		
+		JButton btnRegistrarSueldo = new JButton("Registrar sueldo profesor por curso");
+		btnRegistrarSueldo.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				RegistrarSueldo rs = new RegistrarSueldo();
+				rs.setVisible(true);
+				setVisible(false);
+			}
+		});
+		btnRegistrarSueldo.setBounds(25, 22, 265, 21);
+		paneljefeadm.add(btnRegistrarSueldo);
+		btnRegistrarSueldo.setBackground(new Color(224, 255, 255));
+		btnRegistrarSueldo.setFont(new Font("Calibri", Font.PLAIN, 11));
+		
+		// Desactivar paneles de menus
+				paneljefeadm.setVisible(false);
 		JPanel paneldirector = new JPanel();
 		paneldirector.setBackground(new Color(0, 139, 139));
 		paneldirector.setLayout(null);
@@ -155,42 +191,6 @@ public class Bienvenido extends JFrame {
 		paneldirector.add(button_4);
 		button_4.setFont(new Font("Calibri", Font.PLAIN, 11));
 		button_4.setBackground(new Color(224, 255, 255));
-		
-		JPanel paneljefeadm = new JPanel();
-		paneljefeadm.setBounds(60, 57, 312, 91);
-		panel.add(paneljefeadm);
-		paneljefeadm.setLayout(null);
-		paneljefeadm.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Jefe Administraci\u00F3n - Seleccione tarea:", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 255)));
-		paneljefeadm.setBackground(new Color(0, 139, 139));
-		
-		JButton btncrearcurso = new JButton("Crear curso y asignar profesor");
-		btncrearcurso.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-//				CrearCurso cc = new CrearCurso();
-//				cc.setVisible(true);
-//				setVisible(false);
-			}
-		});
-		btncrearcurso.setBounds(25, 41, 265, 21);
-		paneljefeadm.add(btncrearcurso);
-		btncrearcurso.setBackground(new Color(224, 255, 255));
-		btncrearcurso.setFont(new Font("Calibri", Font.PLAIN, 11));
-		
-		JButton btnRegistrarSueldo = new JButton("Registrar sueldo profesor por curso");
-		btnRegistrarSueldo.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-//				RegistrarSueldo rs = new RegistrarSueldo();
-//				rs.setVisible(true);
-//				setVisible(false);
-			}
-		});
-		btnRegistrarSueldo.setBounds(25, 22, 265, 21);
-		paneljefeadm.add(btnRegistrarSueldo);
-		btnRegistrarSueldo.setBackground(new Color(224, 255, 255));
-		btnRegistrarSueldo.setFont(new Font("Calibri", Font.PLAIN, 11));
-		
-		// Desactivar paneles de menus
-				paneljefeadm.setVisible(false);
 		
 		JPanel panelprofesor = new JPanel();
 		panelprofesor.setBounds(60, 55, 297, 79);

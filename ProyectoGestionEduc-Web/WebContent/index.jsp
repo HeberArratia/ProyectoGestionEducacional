@@ -37,7 +37,7 @@
     			<li><a href="MorososMensualidad.jsp"><i class="fa fa-hand-o-right"></i> Obtener reporte estudiantes morosos en los pagos de mensualidad. </p></a></li>
     			<li><a href="ReporteSueldoPorProfesor.jsp"><i class="fa fa-hand-o-right"></i> Conocer pagos profesores por curso y si fue realizado. </p></a></li>
     			<li><a href="DesactivarCurso.jsp"><i class="fa fa-hand-o-right"></i> Desactivar curso. </p></a></li>
-    			<li><a href="Balance.jsp"><i class="fa fa-hand-o-right"></i> Obtener balance de ingreso y gasto. </p></a></li>
+    			<li><a href="BalanceIngresoGasto.jsp"><i class="fa fa-hand-o-right"></i> Obtener balance de ingreso y gasto. </p></a></li>
     		</ul>  
   		 </div>
   
@@ -45,7 +45,7 @@
 		<div id="submenu2" class="">
 			<p class="seleccione">Seleccione tarea:</p>
    			<ul> 			 
-    			<li><a href="RegPago.jsp"><i class="fa fa-hand-o-right"></i> Registrar sueldo profesor por curso. </p></a></li>
+    			<li><a href="RegistrarSueldo.jsp"><i class="fa fa-hand-o-right"></i> Registrar sueldo profesor por curso. </p></a></li>
     			<li><a href="CrearCurso.jsp"><i class="fa fa-hand-o-right"></i> Crear curso y asignar profesor. </p></a></li>
     		</ul>  
   		</div>

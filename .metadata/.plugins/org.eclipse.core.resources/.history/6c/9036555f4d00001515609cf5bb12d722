@@ -1,0 +1,79 @@
+package Vista;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import javax.swing.border.TitledBorder;
+import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.LayoutStyle.ComponentPlacement;
+
+public class RegistrarSueldo extends JFrame {
+
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					RegistrarSueldo frame = new RegistrarSueldo();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public RegistrarSueldo() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 547, 466);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(0, 139, 139));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		setContentPane(contentPane);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(0, 139, 139));
+		panel.setForeground(new Color(0, 139, 139));
+		panel.setBorder(new TitledBorder(null, "Pagar sueldo profesor", TitledBorder.LEADING, TitledBorder.TOP, null, Color.WHITE));
+		
+		JLabel label = new JLabel("Director");
+		label.setForeground(new Color(255, 255, 240));
+		label.setFont(new Font("Calibri", Font.PLAIN, 21));
+		GroupLayout gl_contentPane = new GroupLayout(contentPane);
+		gl_contentPane.setHorizontalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGap(95)
+					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 355, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(71, Short.MAX_VALUE))
+				.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+					.addContainerGap(190, Short.MAX_VALUE)
+					.addComponent(label, GroupLayout.PREFERRED_SIZE, 146, GroupLayout.PREFERRED_SIZE)
+					.addGap(185))
+		);
+		gl_contentPane.setVerticalGroup(
+			gl_contentPane.createParallelGroup(Alignment.LEADING)
+				.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+					.addGap(42)
+					.addComponent(label, GroupLayout.PREFERRED_SIZE, 32, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
+					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 260, GroupLayout.PREFERRED_SIZE)
+					.addGap(41))
+		);
+		contentPane.setLayout(gl_contentPane);
+	}
+}

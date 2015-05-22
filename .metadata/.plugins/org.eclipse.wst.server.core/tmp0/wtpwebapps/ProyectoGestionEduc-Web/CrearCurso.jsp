@@ -50,7 +50,7 @@ body {
 			
 		</form>
 		</div>
-		<form action="Menu.jsp">
+		<form action="index.jsp">
 			<input type="submit" value="Volver a Menú">
 		</form>
 		</form>
