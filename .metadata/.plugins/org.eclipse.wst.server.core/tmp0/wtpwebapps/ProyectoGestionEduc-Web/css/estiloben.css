@@ -1,0 +1,126 @@
+
+body {
+	background-color: #0080ff;
+}
+
+.pa{
+	background-color: #ffffff;
+	border-radius: 10px 10px 10px 10px;
+	margin: 0 auto;
+	height: 80%;
+	width: 80%;
+}
+
+.divp{
+	height: 400px;
+	width: 210px;
+	margin-left: 5%;
+	text-align: center;
+	margin-top: 5%;
+	background-color: #ffffff;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.lista1,.lista2,.lista3,.lista4{
+	display: none;
+}
+
+
+.titulo{
+	text-align: center;
+	font-family: Caviar Dreams;
+	color: #0080ff;	
+	margin-top: 50px;
+}
+
+h1{
+	margin-top: 10%;
+	margin: 0 auto;
+	text-align: center;
+	font-weight: bold;
+	font-family: Caviar Dreams;
+	color: #0080ff;
+}
+
+h2{
+	margin: 0 auto;
+	margin-top: 15%;
+	text-align: center;
+	font-weight: bold;
+	font-family: Caviar Dreams;
+	color: #0080ff;
+}
+
+.ingresar{
+	margin-left: 30px;
+	margin-top: 30px;
+	width: 500px;
+}
+
+img{
+	margin-top: 10%;
+	margin: 0 auto;
+}	
+	
+.btn{
+	color: #ffffff;
+	background-color: #0080ff;
+	border-color: #0080ff;
+	font-family: Caviar Dreams;	
+	font-weight: bold;
+	margin: 0 auto;
+}	
+
+.btnKill{
+	margin-left: 80%; 
+}
+
+.textPa{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.divMenu{
+	height: 400px;
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: left;	
+	background-color: #ffffff;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.divCodigo,.divInfo{
+	margin-top: 50px;
+}
+
+.textPa{
+	font-size: 18px;
+	font-family: Caviar Dreams;
+	font-weight: bold;
+	color: #0080ff;
+}
+
+text{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.form-control{
+	margin: 0 auto;
+	text-align: center;
+}
+
+label{
+	text-align: center;
+	font-family: Caviar Dreams;
+	font-weight: italic;
+	color: #0080ff;
+	
+}
+
+.rut{
+	margin: 0 auto;
+	text-align: center;
+}
