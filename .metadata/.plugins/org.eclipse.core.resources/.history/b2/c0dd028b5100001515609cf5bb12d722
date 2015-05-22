@@ -1,0 +1,73 @@
+<%@page import="Diagramarefinado.Finanza.Matricula"%>
+<%@page import="orm.Estudiante"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta charset="utf-8"> 
+  <!-- Estilos -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/estiloDirector.css">
+  <!-- JS -->
+  <!--<link href='http://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>-->
+  <title>Director: Obtener nómina</title>
+</head>
+<body>
+  <!-- Titulo -->
+  <header class="text-center principal">
+    <h1>Director</h1>
+  </header>
+  <div id="menu">
+  <a href="index.jsp"><span><img src="images/Home.png" alt=""></span>Inicio</a>
+  </div>
+<!-- Contenido -->
+<div id="contenido" class="container">
+<!-- Inicio panel --> 
+  <div class="panel panel-default">
+    <!-- Titulo panel -->
+        <div class="panel-heading">Nómina de estudiantes morosos en los pagos de matrícula</div>
+          <!--Panel content-->
+        <div class="panel-body">
+		  <%  %>	
+		  <!--Inicio formulario-->
+		  <form > 
+	      <!-- NÓMINA -->
+		  <table class="table table-bordered">
+		    <thead>
+  			<tr>
+  			    <!-- TITULOS TABLA -->
+  				<th>Nombre</th>
+  				<th>Apellido</td>
+  				<th>Rut</td>
+  				<th>Estado Matricula</td>  			   
+			</tr>
+			</thead>
+			<%
+			/* Se llama al metodo para tener el arreglo de estudiantes morosos en el pago de matricula
+			 * y se almacenan en un arreglo de tipo Estudiante
+			 */
+			Estudiante[] est = Matricula.obtenerListMorososMatricula();	
+			// Se reccore el arreglo y se muestra en cada celda c/u de los datos de un estudiante
+			for(int i=0;i<est.length;i++){ %>	
+			<tr>
+  				<td><%= est[i].getPersona().getNombre() %></td>
+  				<td><%= est[i].getPersona().getApellido() %></td>
+  				<td><%= est[i].getPersona().getRut() %></td>
+  				<td><%= est[i].getMatricula().getEstadoMatricula() %></td>
+			</tr>
+			<% } %>
+			
+		  </table>
+          
+           
+               
+          </form>
+        </div>
+  
+  </div>  <!-- Fin del panel -->  
+
+
+</div>  <!-- Fin del contenido -->
+</body>
+</html>
