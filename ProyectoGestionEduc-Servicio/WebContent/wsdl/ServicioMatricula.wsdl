@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://servico" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://servico" xmlns:intf="http://servico" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://servico" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="obtenerListaMorosos">
+    <complexType/>
+   </element>
+   <element name="obtenerListaMorososResponse">
+    <complexType>
+     <sequence>
+      <element name="obtenerListaMorososReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="pagoDeMatricula">
+    <complexType>
+     <sequence>
+      <element name="rutEstudiante" type="xsd:string"/>
+      <element name="rutSecretaria" type="xsd:string"/>
+      <element name="monto" type="xsd:int"/>
+     </sequence>
+    </complexType>
+   </element>
+   <element name="pagoDeMatriculaResponse">
+    <complexType>
+     <sequence>
+      <element name="pagoDeMatriculaReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="pagoDeMatriculaRequest">
+
+      <wsdl:part element="impl:pagoDeMatricula" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="pagoDeMatriculaResponse">
+
+      <wsdl:part element="impl:pagoDeMatriculaResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="obtenerListaMorososRequest">
+
+      <wsdl:part element="impl:obtenerListaMorosos" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="obtenerListaMorososResponse">
+
+      <wsdl:part element="impl:obtenerListaMorososResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="ServicioMatricula">
+
+      <wsdl:operation name="obtenerListaMorosos">
+
+         <wsdl:input message="impl:obtenerListaMorososRequest" name="obtenerListaMorososRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:obtenerListaMorososResponse" name="obtenerListaMorososResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pagoDeMatricula">
+
+         <wsdl:input message="impl:pagoDeMatriculaRequest" name="pagoDeMatriculaRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:pagoDeMatriculaResponse" name="pagoDeMatriculaResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="ServicioMatriculaSoapBinding" type="impl:ServicioMatricula">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="obtenerListaMorosos">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="obtenerListaMorososRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="obtenerListaMorososResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+      <wsdl:operation name="pagoDeMatricula">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="pagoDeMatriculaRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="pagoDeMatriculaResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="ServicioMatriculaService">
+
+      <wsdl:port binding="impl:ServicioMatriculaSoapBinding" name="ServicioMatricula">
+
+         <wsdlsoap:address location="http://localhost:8080/ProyectoGestionEduc-Servicio/services/ServicioMatricula"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>

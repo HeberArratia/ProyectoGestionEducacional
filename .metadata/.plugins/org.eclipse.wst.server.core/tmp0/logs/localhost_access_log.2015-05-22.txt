@@ -26,3 +26,11 @@
 0:0:0:0:0:0:0:1 - - [22/May/2015:02:07:31 -0300] "GET /ProyectoGestionEduc-Web/MorososMatricula.jsp HTTP/1.1" 200 2101
 0:0:0:0:0:0:0:1 - - [22/May/2015:02:07:49 -0300] "GET /ProyectoGestionEduc-Web/ HTTP/1.1" 200 3407
 0:0:0:0:0:0:0:1 - - [22/May/2015:02:07:53 -0300] "GET /ProyectoGestionEduc-Web/MorososMatricula.jsp HTTP/1.1" 200 1986
+127.0.0.1 - - [22/May/2015:02:24:04 -0300] "GET / HTTP/1.1" 404 961
+127.0.0.1 - - [22/May/2015:02:24:04 -0300] "POST /ProyectoGestionEduc-Servicio/services/AdminService HTTP/1.0" 200 291
+127.0.0.1 - - [22/May/2015:02:24:04 -0300] "POST /ProyectoGestionEduc-Servicio/services/AdminService HTTP/1.0" 200 4607
+127.0.0.1 - - [22/May/2015:02:24:49 -0300] "GET / HTTP/1.1" 404 961
+0:0:0:0:0:0:0:1 - - [22/May/2015:02:24:49 -0300] "GET /ProyectoGestionEduc-Servicio/ HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [22/May/2015:02:24:54 -0300] "GET /ProyectoGestionEduc-Servicio/services HTTP/1.1" 200 554
+0:0:0:0:0:0:0:1 - - [22/May/2015:02:24:59 -0300] "GET /ProyectoGestionEduc-Servicio/services/ServicioMatricula?wsdl HTTP/1.1" 200 4036
+0:0:0:0:0:0:0:1 - - [22/May/2015:02:25:04 -0300] "GET /ProyectoGestionEduc-Servicio/services/ServicioMatricula?wsdl HTTP/1.1" 200 4036

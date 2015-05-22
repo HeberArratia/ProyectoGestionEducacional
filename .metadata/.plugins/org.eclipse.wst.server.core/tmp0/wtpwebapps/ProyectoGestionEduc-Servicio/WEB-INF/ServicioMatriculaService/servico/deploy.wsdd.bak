@@ -1,0 +1,33 @@
+<!-- Use this file to deploy some handlers/chains and services      -->
+<!-- Two ways to do this:                                           -->
+<!--   java org.apache.axis.client.AdminClient deploy.wsdd          -->
+<!--      after the axis server is running                          -->
+<!-- or                                                             -->
+<!--   java org.apache.axis.utils.Admin client|server deploy.wsdd   -->
+<!--      from the same directory that the Axis engine runs         -->
+
+<deployment
+    xmlns="http://xml.apache.org/axis/wsdd/"
+    xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+
+  <!-- Services from ServicioMatriculaService WSDL service -->
+
+  <service name="ServicioMatricula" provider="java:RPC" style="wrapped" use="literal">
+      <parameter name="wsdlTargetNamespace" value="http://servico"/>
+      <parameter name="wsdlServiceElement" value="ServicioMatriculaService"/>
+      <parameter name="schemaQualified" value="http://servico"/>
+      <parameter name="wsdlServicePort" value="ServicioMatricula"/>
+      <parameter name="className" value="servico.ServicioMatriculaSoapBindingImpl"/>
+      <parameter name="wsdlPortType" value="ServicioMatricula"/>
+      <parameter name="typeMappingVersion" value="1.2"/>
+      <operation name="obtenerListaMorosos" qname="operNS:obtenerListaMorosos" xmlns:operNS="http://servico" returnQName="retNS:obtenerListaMorososReturn" xmlns:retNS="http://servico" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+      </operation>
+      <operation name="pagoDeMatricula" qname="operNS:pagoDeMatricula" xmlns:operNS="http://servico" returnQName="retNS:pagoDeMatriculaReturn" xmlns:retNS="http://servico" returnType="rtns:string" xmlns:rtns="http://www.w3.org/2001/XMLSchema" soapAction="" >
+        <parameter qname="pns:rutEstudiante" xmlns:pns="http://servico" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:rutSecretaria" xmlns:pns="http://servico" type="tns:string" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+        <parameter qname="pns:monto" xmlns:pns="http://servico" type="tns:int" xmlns:tns="http://www.w3.org/2001/XMLSchema"/>
+      </operation>
+      <parameter name="allowedMethods" value="obtenerListaMorosos pagoDeMatricula"/>
+
+  </service>
+</deployment>
