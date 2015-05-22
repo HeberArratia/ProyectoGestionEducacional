@@ -1,39 +1,27 @@
 package Vista;
 
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.TitledBorder;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
-import javax.swing.JButton;
-
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
-
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
-import javax.swing.UIManager;
-
 import java.awt.Color;
+import java.awt.EventQueue;
 import java.awt.Font;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
-import java.awt.SystemColor;
-import java.awt.CardLayout;
-import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.GroupLayout;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
 import javax.swing.GroupLayout.Alignment;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.TitledBorder;
 
 public class Bienvenido extends JFrame {
 
 	private JPanel contentPane;
-	private JButton btnDirector = new JButton("Director");
-	
+
 	/**
 	 * Launch the application.
 	 */
@@ -132,9 +120,9 @@ public class Bienvenido extends JFrame {
 		JButton button_2 = new JButton("Conocer pagos profesores por curso");
 		button_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ReporteSueldoPorProfesor rps = new ReporteSueldoPorProfesor();
-				rps.setVisible(true);
-				setVisible(false);
+//				ReporteSueldoPorProfesor rps = new ReporteSueldoPorProfesor();
+//				rps.setVisible(true);
+//				setVisible(false);
 			}
 		});
 		button_2.setBounds(28, 72, 265, 21);
@@ -145,9 +133,9 @@ public class Bienvenido extends JFrame {
 		JButton button_3 = new JButton("Desactivar curso");
 		button_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				DesactivarCurso dc = new DesactivarCurso();
-				dc.setVisible(true);
-				setVisible(false);
+//				DesactivarCurso dc = new DesactivarCurso();
+//				dc.setVisible(true);
+//				setVisible(false);
 			}
 		});
 		button_3.setBounds(28, 52, 265, 21);
@@ -158,9 +146,9 @@ public class Bienvenido extends JFrame {
 		JButton button_4 = new JButton("Obtener balance de ingreso y gasto");
 		button_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				BalanceIngresoGasto big = new BalanceIngresoGasto();
-				big.setVisible(true);
-				setVisible(false);
+//				BalanceIngresoGasto big = new BalanceIngresoGasto();
+//				big.setVisible(true);
+//				setVisible(false);
 			}
 		});
 		button_4.setBounds(28, 33, 265, 21);
@@ -178,9 +166,9 @@ public class Bienvenido extends JFrame {
 		JButton btncrearcurso = new JButton("Crear curso y asignar profesor");
 		btncrearcurso.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				CrearCurso cc = new CrearCurso();
-				cc.setVisible(true);
-				setVisible(false);
+//				CrearCurso cc = new CrearCurso();
+//				cc.setVisible(true);
+//				setVisible(false);
 			}
 		});
 		btncrearcurso.setBounds(25, 41, 265, 21);
@@ -191,9 +179,9 @@ public class Bienvenido extends JFrame {
 		JButton btnRegistrarSueldo = new JButton("Registrar sueldo profesor por curso");
 		btnRegistrarSueldo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				RegistrarSueldo rs = new RegistrarSueldo();
-				rs.setVisible(true);
-				setVisible(false);
+//				RegistrarSueldo rs = new RegistrarSueldo();
+//				rs.setVisible(true);
+//				setVisible(false);
 			}
 		});
 		btnRegistrarSueldo.setBounds(25, 22, 265, 21);
@@ -214,9 +202,9 @@ public class Bienvenido extends JFrame {
 		JButton btnInscribirAlumno = new JButton("Inscribir alumno en un curso");
 		btnInscribirAlumno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				InscribirAlumno ia = new InscribirAlumno();
-				ia.setVisible(true);
-				setVisible(false);
+//				InscribirAlumno ia = new InscribirAlumno();
+//				ia.setVisible(true);
+//				setVisible(false);
 			}
 		});
 		btnInscribirAlumno.setFont(new Font("Calibri", Font.PLAIN, 11));
@@ -249,7 +237,7 @@ public class Bienvenido extends JFrame {
 		JButton btnRegistrarPagoMa = new JButton("Registrar pago matr\u00EDcula del estudiante");
 		btnRegistrarPagoMa.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				RegistrarPagoMatricula secre = new RegistrarPagoMatricula();
+				PagoMatricula secre = new PagoMatricula();
 				secre.setVisible(true);
 				setVisible(false);
 				
@@ -334,4 +322,5 @@ btnsecretaria.addActionListener(new ActionListener() {
 			}
 		});
 	}
+
 }

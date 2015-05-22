@@ -5,18 +5,20 @@ import java.awt.Color;
 import java.awt.EventQueue;
 import java.awt.Font;
 
+import javax.swing.DefaultComboBoxModel;
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.border.TitledBorder;
-import javax.swing.UIManager;
 import javax.swing.JTextArea;
-import javax.swing.JButton;
+import javax.swing.UIManager;
+import javax.swing.border.EmptyBorder;
 import javax.swing.border.EtchedBorder;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
+import javax.swing.border.TitledBorder;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class PagoMensualidad extends JFrame {
 
@@ -174,9 +176,17 @@ public class PagoMensualidad extends JFrame {
 		panel.add(btnRegistrar);
 		
 		JButton button = new JButton("Volver");
+		button.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				Bienvenido bien = new Bienvenido();
+				bien.setVisible(true);
+				setVisible(false);
+			}
+		});
 		button.setIcon(new ImageIcon("C:\\Users\\Heber\\workspace\\ProyectoGestionEduc-Escritorio\\src\\Files\\deshacer-icono-5993-16.png"));
 		button.setFont(new Font("Calibri", Font.PLAIN, 12));
 		button.setBounds(10, 393, 89, 23);
 		contentPane.add(button);
 	}
+
 }
