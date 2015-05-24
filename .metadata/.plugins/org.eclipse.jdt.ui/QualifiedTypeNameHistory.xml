@@ -2,8 +2,13 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.orm.PersistentException"/>
 <fullyQualifiedTypeName name="Diagramarefinado.Academico.StaffAcademico.Curso"/>
-<fullyQualifiedTypeName name="Vista.Bienvenido"/>
 <fullyQualifiedTypeName name="Diagramarefinado.Academico.Curso"/>
 <fullyQualifiedTypeName name="Diagramarefinado.Academico.StaffAcademico.Estudiante"/>
+<fullyQualifiedTypeName name="Diagramarefinado.StaffAdministracion.Secretaria"/>
 <fullyQualifiedTypeName name="Diagramarefinado.Persona.Persona"/>
+<fullyQualifiedTypeName name="Diagramarefinado.Finanza.Matricula"/>
+<fullyQualifiedTypeName name="servico.ServicioMatriculaProxy"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.rmi.RemoteException"/>
+<fullyQualifiedTypeName name="Vista.Bienvenido"/>
 </qualifiedTypeNameHistroy>

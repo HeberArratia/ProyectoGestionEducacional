@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Fri May 22 04:13:29 ART 2015
+#Sat May 23 23:12:29 ART 2015
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Heber\\Documents\\ProyectoGestionEducacional\\ProyectoGestionEduc-Web\\WebContent\\WEB-INF\\lib\\libreriagestioneduc.jar=WEB-INF/lib/libreriagestioneduc.jar
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Heber\\Documents\\ProyectoGestionEducacional\\ProyectoGestionEduc-Servicio\\WebContent\\WEB-INF\\lib\\libreriagestioneduc.jar=WEB-INF/lib/libreriagestioneduc.jar

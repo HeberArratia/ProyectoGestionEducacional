@@ -133,9 +133,9 @@ public class Bienvenido extends JFrame {
 		JButton button_3 = new JButton("Desactivar curso");
 		button_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				DesactivarCurso dc = new DesactivarCurso();
-//				dc.setVisible(true);
-//				setVisible(false);
+				DesactivarCurso dc = new DesactivarCurso();
+				dc.setVisible(true);
+				setVisible(false);
 			}
 		});
 		button_3.setBounds(28, 52, 265, 21);
@@ -146,9 +146,9 @@ public class Bienvenido extends JFrame {
 		JButton button_4 = new JButton("Obtener balance de ingreso y gasto");
 		button_4.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-//				BalanceIngresoGasto big = new BalanceIngresoGasto();
-//				big.setVisible(true);
-//				setVisible(false);
+				BalanceIngresoGasto big = new BalanceIngresoGasto();
+				big.setVisible(true);
+				setVisible(false);
 			}
 		});
 		button_4.setBounds(28, 33, 265, 21);
@@ -166,9 +166,9 @@ public class Bienvenido extends JFrame {
 		JButton btncrearcurso = new JButton("Crear curso y asignar profesor");
 		btncrearcurso.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				CrearCurso cc = new CrearCurso();
-//				cc.setVisible(true);
-//				setVisible(false);
+				CrearCurso cc = new CrearCurso();
+				cc.setVisible(true);
+				setVisible(false);
 			}
 		});
 		btncrearcurso.setBounds(25, 41, 265, 21);
@@ -202,9 +202,9 @@ public class Bienvenido extends JFrame {
 		JButton btnInscribirAlumno = new JButton("Inscribir alumno en un curso");
 		btnInscribirAlumno.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-//				InscribirAlumno ia = new InscribirAlumno();
-//				ia.setVisible(true);
-//				setVisible(false);
+				InscribirAlumno ia = new InscribirAlumno();
+				ia.setVisible(true);
+				setVisible(false);
 			}
 		});
 		btnInscribirAlumno.setFont(new Font("Calibri", Font.PLAIN, 11));

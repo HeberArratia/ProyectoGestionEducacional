@@ -21,7 +21,7 @@ public class EstudianteTest {
 
 		 //Verficicar si ingreso correctamente
 		 String resultado = "";
-		 resultado = Estudiante.agregarNuevoEstudiante(new Persona("Pablo","Valenzuela","207658972"),"183511203");
+		 resultado = Estudiante.agregarNuevoEstudiante(new Persona("Katherine","Urzua","176548764"),"183511203");
 		 // Resultado esperado: "Se ingreso nuevo alumno correctamente"
 		 assertTrue(resultado == "Se ingreso nuevo alumno correctamente");
 		 // --> Aprobado

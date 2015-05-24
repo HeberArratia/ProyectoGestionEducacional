@@ -61,7 +61,7 @@ public class ReporteSueldoPorProfesor extends JFrame {
 		
 		JPanel panel = new JPanel();
 		panel.setBorder(new TitledBorder(UIManager.getBorder("TitledBorder.border"), "Reporte de montos a pagar mensualmente", TitledBorder.LEADING, TitledBorder.TOP, null, new Color(255, 255, 240)));
-		panel.setBackground(new Color(0, 128, 128));
+		panel.setBackground(new Color(0, 139, 139));
 		
 		JScrollPane scrollPane = new JScrollPane();
 		GroupLayout gl_panel = new GroupLayout(panel);
